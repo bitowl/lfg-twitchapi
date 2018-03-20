@@ -16,9 +16,9 @@ Requires Twitch authentication to be enabled in your NodeCG installation.
 ```
 
 ## Usage
-First, ensure that your NodeCG installation is using Twitch authentication. See the [NodeCG configuration docs](http://nodecg.com/starter/configuration.html) for details.
+First, ensure that your NodeCG installation is using Twitch authentication. See the [NodeCG configuration docs](http://nodecg.com/tutorial-nodecg-configuration.html) for details.
 
-Then, add `lfg-twitchapi` as a `bundleDependency` in your bundle's [`nodecg.json`](http://nodecg.com/guide/nodecg.json.html)
+Then, add `lfg-twitchapi` as a `bundleDependency` in your bundle's [`package.json`](http://nodecg.com/tutorial-manifest.html)
 
 Now, add the following code to your bundle's extension:
 ```js
@@ -58,5 +58,4 @@ If `{{username}}` is present in `path`, it will be replaced with the value of `n
 * `body` (Optional) is an object to send as the JSON request body
 
 ### License
-lfg-twitchapi is provided under the MIT license, which is available to read in the [LICENSE][] file.
-[license]: LICENSE
+lfg-twitchapi is provided under the MIT license, which is available to read in the [LICENSE](LICENSE) file.

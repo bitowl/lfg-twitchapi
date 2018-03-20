@@ -18,7 +18,7 @@ module.exports = function (extensionApi) {
 	}
 
 	if (!Object.keys(nodecg.bundleConfig).length) {
-		throw new Error('No config found in cfg/lfg-twitch.json, aborting!');
+		throw new Error('No config found in cfg/lfg-twitchapi.json, aborting!');
 	}
 
 	const loginLib = require('../../lib/login');
