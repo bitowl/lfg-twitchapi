@@ -1,6 +1,6 @@
 {
   "name": "lfg-twitchapi",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Lets other bundles easily query the Twitch API on behalf of a logged in user.",
   "homepage": "http://supportclass.net/",
   "author": {
@@ -20,7 +20,7 @@
     "nodecg-bundle"
   ],
   "nodecg": {
-    "compatibleRange": "~0.9.0",
+    "compatibleRange": "~1.1.0",
     "dashboardPanels": [
       {
         "name": "status",
