@@ -58,12 +58,12 @@ module.exports = function (extensionApi) {
 			const user = req.session.passport.user;
 			if (user.username === nodecg.bundleConfig.username) {
 				// Update the 'session' Replicant with only the non-confidential information
+				console.log(user);
 				sessionReplicant.value = {
 					provider: user.provider, // should ALWAYS be 'twitch'
 					username: user.username,
 					displayName: user.displayName,
-					logo: user._json.logo,
-					url: user._json._links.self
+					profileImageUrl: user._json.profile_image_url,
 				};
 				accessToken = user.accessToken;
 				_session = req.session;
